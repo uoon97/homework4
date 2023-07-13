@@ -10,7 +10,7 @@ if model_path is None:
     model_path = '../model'
 
 with open(file = os.path.join(model_path, 'service_1.pickle'), mode = 'rb') as f:
-          images = pickle.load(f)
+    images = pickle.load(f)
 
 
 app = Flask(__name__)
@@ -18,13 +18,13 @@ app.debug = True
 
 @app.route('/')
 def index():
-    
+
     samples = np.random.randint(len(images), size = 9)
     result = []
 
     for sample in samples:
         result.append(images[sample])
-    
+
     plt.figure(figsize = (8, 8))
     for idx, image in enumerate(result):
         plt.subplot(3, 3, idx+1)
