@@ -1,0 +1,13 @@
+FROM python:3.9
+LABEL maintainer "edberg1974 <edberg.s@gmail.com>"
+
+COPY ./app /app
+COPY ./model /model
+ENV MODELPATH '../model'
+
+WORKDIR /app
+RUN pip3 install flask
+RUN pip3 install -r requirements.txt
+
+ENTRYPOINT [ "python3" ]
+CMD ["service_2.py"]
