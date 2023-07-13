@@ -1,8 +1,6 @@
 import os
 import pickle
-from io import BytesIO
 import numpy as np
-import matplotlib.pyplot as plt
 from flask import Flask, send_file
 
 model_path = os.environ.get('MODELPATH')
