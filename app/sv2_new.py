@@ -19,7 +19,7 @@ def init():
 
 def service_2():
     images = init()
-    
+
     try:
         samples = np.random.randint(len(images), size = 9)
         result = []
@@ -52,6 +52,7 @@ app.debug = True
 
 @app.route('/')
 def index():
+    images = init()
 
     samples = np.random.randint(len(images), size = 9)
     result = []
