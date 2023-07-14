@@ -5,6 +5,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from flask import Flask, send_file
 
+print(os.getcwd())
+
 def init():
     model_path = os.environ.get('MODELPATH')
     if model_path is None:
