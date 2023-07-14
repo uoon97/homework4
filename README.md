@@ -1,5 +1,7 @@
 # homework4
 
+![example workflow](https://github.com/uoon97/homework4/actions/workflows/test_service.yml/badge.svg?branch=master)
+
 ## Build Images
 - Service_1: docker build -t pre-homework:0.0 -f Dockerfile.service_1 ./  
 - Service_2: docker build -t post-homework:0.0 -f Dockerfile.service_2 ./
