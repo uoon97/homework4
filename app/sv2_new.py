@@ -15,9 +15,11 @@ def init():
 
     return images
 
-images = init()
+
 
 def service_2():
+    images = init()
+    
     try:
         samples = np.random.randint(len(images), size = 9)
         result = []
