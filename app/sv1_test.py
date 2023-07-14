@@ -1,5 +1,4 @@
 import unittest
-import sys
 from sv1_new import service_1
 
 class TestSv1(unittest.TestCase):
