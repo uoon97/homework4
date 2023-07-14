@@ -1,7 +1,5 @@
 import os
 import pickle
-import numpy as np
-from flask import Flask, send_file
 
 model_path = os.environ.get('MODELPATH')
 if model_path is None:
