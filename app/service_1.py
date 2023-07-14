@@ -7,8 +7,6 @@ image_path = os.environ.get('IMAGEPATH')
 if image_path is None:
     image_path = '../data'
 
-print(image_path)
-
 def load_data():
 
     numbers = range(0, 10)
