@@ -14,4 +14,4 @@
 ## Example
 - after fork,
 - git add & commit
-- https://localhost:5001
+- http://localhost:5001
