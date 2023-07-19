@@ -8,4 +8,10 @@
 
 ## Run Container
 - Service_1: docker run -it --name prehw_0.0 -v .../hw4/model:/model pre-homework:0.0
-- Service_2: docker run -it --name posthw_0.0 -v .../hw4/model:/model -p 80:80 pre-homework:0.0
+- Service_2: docker run -it --name posthw_0.0 -v .../hw4/model:/model -p 80:80 post-homework:0.0
+
+
+## Example
+- after fork,
+- git add & commit
+- http://localhost:5001
