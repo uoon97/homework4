@@ -1,13 +1,12 @@
 FROM python:3.9
 LABEL maintainer "edberg1974 <edberg.s@gmail.com>"
 
-COPY ./app /app
-COPY ./model /model
+COPY ./app/service_1.py /app
 COPY ./data /data
 ENV IMAGEPATH '../data'
 
 WORKDIR /app
-RUN pip3 install -r requirements.txt
+RUN pip3 install numpy && pip3 install pillow
 
 ENTRYPOINT [ "python3" ]
 CMD ["service_1.py"]

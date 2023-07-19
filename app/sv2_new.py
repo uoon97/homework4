@@ -5,7 +5,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from flask import Flask, send_file
 
-print(os.getcwd())
 
 def init():
     model_path = os.environ.get('MODELPATH')
@@ -74,4 +73,4 @@ def index():
     return send_file(img, mimetype = 'image/png')
 
 if __name__ == '__main__':
-     app.run(host='0.0.0.0', port = 80)
+     app.run(host='0.0.0.0', port = 5001)

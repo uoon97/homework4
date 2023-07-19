@@ -2,9 +2,11 @@ import os
 import pickle
 from io import BytesIO
 import numpy as np
+import matplotlib
 import matplotlib.pyplot as plt
 from flask import Flask, send_file
 
+matplotlib.use('Agg')
 model_path = os.environ.get('MODELPATH')
 if model_path is None:
     model_path = '../model'
@@ -37,4 +39,4 @@ def index():
     return send_file(img, mimetype = 'image/png')
 
 if __name__ == '__main__':
-     app.run(host='0.0.0.0', port = 80)
+     app.run(host='0.0.0.0', port = 5001)
